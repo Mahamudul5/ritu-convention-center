@@ -17,6 +17,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- font awosome added -->
     <script src="https://kit.fontawesome.com/80aa374bc1.js" crossorigin="anonymous"></script>
+    <!-- link for toast  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -100,22 +104,21 @@
         </div>
     </header>
     <main>
-        <section>
-            <!-- toast alart added -->
-            <div class="alert alert-success alert-dismissible" role="alert"
-                style="width: 20%;height: 45px; padding-top:5px; background-color: green;color: honeydew; ">
-                <button class="btn-close" data-bs-dismiss="alart" aria-label="close">
-
-                </button>
-                <P style="font-weight: bold;"><i class="fas fa-tags"></i> Get 22% off for 2022</P>
+        <!-- toast added  -->
+        <div class="m-4">
+            <div class="toast fade show" id="myToast">
+                <div class="toast-header">
+                    <strong class="me-auto"><i class="bi-gift-fill"></i> Get 22% off for 2022!</strong>
+                    <small>till 2022</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
             </div>
-
-        </section>
+        </div>
         <!-- package section  -->
-        <section>
-            <div class="row ms-5">
-                <div class="col-3 mt-5">
-                    <div class="card " style="width: 17rem;height: 25rem;">
+        <section class="container mx-auto">
+            <div class="row  mt-5">
+                <div class="col-lg-3 col-sm-1 mt-5">
+                    <div class="card shadow-lg " style="width: 17rem;height: 25rem;">
                         <div class="card-body">
                             <h4 class="card-title">$ 300</h4>
                             <h5>Business Fair</h5>
@@ -133,8 +136,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mt-5">
-                    <div class="card" style="width: 17rem; height: 25rem;">
+                <div class="col-lg-3 col-sm-1 mt-5">
+                    <div class="card shadow-lg" style="width: 17rem; height: 25rem;">
                         <div class="card-body">
                             <h4 class="card-title">$ 600</h4>
                             <h5>Wedding gold</h5>
@@ -151,8 +154,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mt-2">
-                    <div class="card bg-info" style="width: 17rem; height:29rem; ">
+                <div class="col-lg-3 col-sm-1  mt-2">
+                    <div class="card shadow-lg bg-info" style="width: 17rem; height:29rem; ">
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             Best selling
                             <span class="visually-hidden">unread messages</span>
@@ -174,8 +177,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 mt-5">
-                    <div class="card" style="width: 17rem; height:25rem">
+                <div class="col-lg-3 col-sm-1  mt-5">
+                    <div class="card shadow-lg" style="width: 17rem; height:25rem">
                         <div class="card-body">
                             <h4 class="card-title">$ 1400</h4>
                             <h5>Corporate program</h5>
@@ -194,7 +197,6 @@
                 </div>
 
             </div>
-
         </section>
     </main>
     <footer>
